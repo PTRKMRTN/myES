@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Employer details</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+         crossorigin="anonymous"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script>
+         /// some script
+         
+         // jquery ready start
+         $(document).ready(function() {
+         	// jQuery code
+         
+         	//////////////////////// Prevent closing from click inside dropdown
+             $(document).on('click', '.dropdown-menu', function (e) {
+               e.stopPropagation();
+             });
+             
+         	
+         }); // jquery end
+      </script>
+      <style>
+         @media all and (min-width: 992px) {
+         .navbar{ padding-top: 0; padding-bottom: 0; }
+         .navbar .has-megamenu{position:static!important;}
+         .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+         .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+         <a class="navbar-brand" href="#">Brand</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+               <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+               <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+               <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+               <li class="nav-item dropdown has-megamenu">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Mega menu  </a>
+                  <div class="dropdown-menu megamenu" role="menu">
+                     <div class="row">
+                        <div class="col-md-3">
+                           <div class="col-megamenu">
+                              <h6 class="title">Title Menu One</h6>
+                              <ul class="list-unstyled">
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                              </ul>
+                           </div>
+                           <!-- col-megamenu.// -->
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-md-3">
+                           <div class="col-megamenu">
+                              <h6 class="title">Title Menu Two</h6>
+                              <ul class="list-unstyled">
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                              </ul>
+                           </div>
+                           <!-- col-megamenu.// -->
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-md-3">
+                           <div class="col-megamenu">
+                              <h6 class="title">Title Menu Three</h6>
+                              <ul class="list-unstyled">
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                              </ul>
+                           </div>
+                           <!-- col-megamenu.// -->
+                        </div>
+                        <div class="col-md-3">
+                           <div class="col-megamenu">
+                              <h6 class="title">Title Menu Four</h6>
+                              <ul class="list-unstyled">
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                                 <li><a href="#">Custom Menu</a></li>
+                              </ul>
+                           </div>
+                           <!-- col-megamenu.// -->
+                        </div>
+                        <!-- end col-3 -->
+                     </div>
+                     <!-- end row --> 
+                  </div>
+                  <!-- dropdown-mega-menu.// -->
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                     <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                     <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!-- navbar-collapse.// -->
+      </nav>
+      <div class="container">
+         <main>
+            <div class="py-5">
+               <br><br>
+               <h2>Employer details</h2>
+               <p class="lead">Tell us about the employer</p>
+               <hr>
+            </div>
+            <div class="row g-3">
+               <div class="col-md-6 col-lg-8">
+                  <form class="needs-validation" novalidate>
+                     <div class="row g-3">
+                        <div class="col-sm-12">
+                           <label class="form-label">Employer name</label>
+                           <div class="form-text">You can search by ABN, ACN or the company name.</div>
+                        </div>
+                        <div class="col-sm-12">
+                           <div class="card" style="width: 38rem;">
+                              <div class="card-body">
+                                 <div class="col-sm-12">
+                                    <a href="#" class="float-end">Search again</a>
+                                 </div>
+                                 <h5 class="card-title">Employer name</h5>
+                                 <table class="table  table-borderless">
+                                    <tbody>
+                                       <tr>
+                                          <th scope="row">ABN</th>
+                                          <td>Something here</td>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Company name</th>
+                                          <td>Something here</td>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Entity type</th>
+                                          <td>Something here</td>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Main business location</th>
+                                          <td>Something here</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Provide a short description about the employer and their service offering</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                           Valid last name is required.
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <label class="form-label">Select the option that best describes the employer</label>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                           <label class="form-check-label" for="flexRadioDefault1">
+                           Other entity
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                           <label class="form-check-label" for="flexRadioDefault2">
+                           Own organisation
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                           <label class="form-check-label" for="flexRadioDefault3">
+                           Relevant entity
+                           </label>
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <label class="form-label">Select the public employer status</label><br>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                           <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+                           <label class="btn btn-outline-primary" for="btnradio1">Active</label>
+                           <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+                           <label class="btn btn-outline-primary" for="btnradio3">Inactive</label>
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <label for="org" class="form-label">The organisation for this employer</label>
+                        <input type="text" class="form-control" id="org" placeholder="Org name" disabled>
+                     </div>
+                     <div class="col-12">
+                        <label for="site" class="form-label">The site for this employer</label>
+                        <select class="form-select" id="site" required>
+                           <option value="">Choose...</option>
+                           <option>Site 1</option>
+                           <option>Site 2</option>
+                           <option>Site 3</option>
+                        </select>
+                     </div>
+                     <div class="col-12">
+                        <hr>
+                        <button type="button" class="btn btn-primary">Next</button>
+                        <button type="button" class="btn btn-secondary">Previous</button>
+                        <button type="button" class="btn btn-link">Exit</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </main>  <footer class="my-5 pt-5 text-muted text-small offset-3">
+    <p class="mb-1"><strong>myES</strong> | Department of Education, Skills and Employment</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+      </div>
+      <script>
+         // Dropdown Menu Fade    
+         jQuery(document).ready(function(){
+             $(".dropdown").hover(
+                 function() { $('.dropdown-menu', this).stop().fadeIn("fast");
+                 },
+                 function() { $('.dropdown-menu', this).stop().fadeOut("fast");
+             });
+         });
+      </script>
+   <script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script>
+</body>
+</html>

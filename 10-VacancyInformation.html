@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Vacancy information</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+         crossorigin="anonymous"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/choices.min.js"></script>
+<link href="css/choices.min.css" rel="stylesheet">
+<script src="js/gijgo.min.js" type="text/javascript"></script>
+<link href="css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link id="dark-theme-style" rel="stylesheet" />	
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary pe-3 nav-org">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        
+        <span class="pe-1 text-white">BBWY - U645</span>
+      </form>
+    </div>
+    <div class="d-flex"> <span class="me-5 text-white fw-bold">Welcome Ross (RS2344)</span> <a href="#" class="me-3">Switch account <i class="bi bi-arrow-repeat"></i></a> <a
+        href="javascript:void()" class="font-weight-bold" id="theme-toggler" onclick="toggleTheme()"
+      ></a></div>
+  </div>
+</nav>
+<div class="container">
+  <main>
+    <div class="py-5 offset-3">
+      <h2>Vacancy information</h2>
+      <p class="lead">Tell us about the vacancy. </p>
+      <hr>
+      <a id="btn-prev" onclick="prev()" href="#"><i class="bi bi-chevron-left"></i>Previous</a> </div>
+    <div class="row">
+      <div class="col-md-3 mt-n2 progress-indicator">
+        <ul class="nav flex-column">
+          <li class="nav-item"> <a class="nav-link fw-bold progress-done" href="#"><i class="bi bi-check-circle-fill progress-indicator-sub-icon"></i>Part A - Employer details</a> </li>
+          <li class="nav-item"> <a class="nav-link fw-bold" href="#">Part B - Vacancy details</a> </li>
+          <li class="nav-item"> <a class="nav-link sub" href="#">Vacancy details</a> </li>
+          <li class="nav-item"> <a class="nav-link sub" href="#">Vacancy description</a> </li>
+          <li class="nav-item"> <a class="nav-link ms-3 fw-bold progress-sub-active" href="#"><i class="bi bi-play-circle-fill progress-indicator-sub-icon"></i> Vacancy information</a> </li>
+          <li class="nav-item"> <span class="nav-link fw-bold" href="#">Part C - Placement details</span> </li>
+          <li class="nav-item"> <span class="nav-link fw-bold" href="#">Review and submit</span> </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="col-12 mb-5">
+            <label class="form-label">Select the tenure type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1"> Contract</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2"> Permanent (6 months or more)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3"> Temporary (6 months or less)</label>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Select the postition type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault2" id="2a">
+              <label class="form-check-label" for="2a"> Casual </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault2" id="2b">
+              <label class="form-check-label" for="2b"> Part time</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault2" id="2c">
+              <label class="form-check-label" for="2c"> Full time</label>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">What is the placement type?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault3" id="3a">
+              <label class="form-check-label" for="3a"> Other</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault3" id="3b">
+              <label class="form-check-label" for="3b"> Paid work trial</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault3" id="3c">
+              <label class="form-check-label" for="3c"> Unpaid work tial</label>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <label for="site" class="form-label">Salary details</label>
+            <select class="form-select" id="site" required>
+              <option value="">Choose...</option>
+              <option>Above award rates</option>
+              <option>Award rates</option>
+              <option>Between $40,000 and $60,000 per annum</option>
+				<option>Between $60,001 and $80,000 per annum</option>
+				<option>Between $80,001 and $100,000 per annum</option>
+				<option>Commission-based salary</option>
+				<option>Hourly rate</option>
+				<option>Less than $40,000 per annum</option>
+				<option>More than $100,000 per annum</option>
+				<option>Salary not specified</option>
+            </select>
+          </div>
+          <div class="col-12 mb-5">
+            <label for="org" class="form-label">Position hours</label>
+            <div class="col-1">
+              <input type="text" class="form-control" id="org">
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Do you have an anticiapted start date? </label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup1" id="1a" value="yes">
+              <label class="btn btn-outline-primary" for="1a">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup1" id="1b" value="no">
+              <label class="btn btn-outline-primary" for="1b">No</label>
+            </div>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse mb-5">
+            <label class="form-label" for="1a">Tell us the anticiapted start date (dd/mm/yyyy)</label>
+            <div class="form-group has-search mb-5 col-md-3"> <i class="bi bi-calendar3 form-control-feedback"></i>
+              <input type="text" class="form-control" id="datepicker"/>
+            </div>
+            <label class="form-label" for="1a">Tell us the anticiapted end date (dd/mm/yyyy)</label>
+            <div class="form-group has-search mb-5 col-md-3"> <i class="bi bi-calendar3 form-control-feedback"></i>
+              <input type="text" class="form-control" id="datepicker2"/>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Does this vacancy need job seekers to have any licenses?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup2" id="2e" value="yes">
+              <label class="btn btn-outline-primary" for="2e">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup2" id="2f" value="no">
+              <label class="btn btn-outline-primary" for="2f">No</label>
+            </div>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse mb-5">
+            <label class="form-label">Select the licenses needed</label>
+            <div class="form-text mb-3">You can select more than one</div>
+            <div class="row d-flex mt-100">
+              <div class="col-md-12">
+                <select id="choices-multiple-remove-button" placeholder="Select upto 5 tags" multiple>
+                  <option value="Crane and hoist - Portal boom crane">Crane and hoist - Portal boom crane</option>
+                  <option value="Building and construction - Contractor">Building and construction - Contractor</option>
+                  <option value="First aid - First aid">First aid - First aid</option>
+                  <option value="Item4">Item4</option>
+                  <option value="Item5">Item5</option>
+                  <option value="Item6">Item6</option>
+                  <option value="Item7">Item7</option>
+                  <option value="Item8">Item8</option>
+                  <option value="Item9">Item9</option>
+                  <option value="Item10">Item10</option>
+                  <option value="Item11">Item11</option>
+                  <option value="Item12">Item12</option>
+                  <option value="Item13">Item13</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Does this vacancy have any special vacancy types?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup3" id="3y" value="yes">
+              <label class="btn btn-outline-primary" for="3y">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup3" id="3z" value="no">
+              <label class="btn btn-outline-primary" for="3z">No</label>
+            </div>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse mb-5">
+            <label class="form-label">Select the licenses needed</label>
+            <div class="form-text mb-3">You can select more than one</div>
+            <div class="row d-flex mt-100">
+              <div class="col-md-12">
+                <select id="choices-multiple-remove-button2" placeholder="Select upto 5 tags" multiple>
+                  <option value="Crane and hoist - Portal boom crane">Crane and hoist - Portal boom crane</option>
+                  <option value="Building and construction - Contractor">Building and construction - Contractor</option>
+                  <option value="First aid - First aid">First aid - First aid</option>
+                  <option value="Item4">Item4</option>
+                  <option value="Item5">Item5</option>
+                  <option value="Item6">Item6</option>
+                  <option value="Item7">Item7</option>
+                  <option value="Item8">Item8</option>
+                  <option value="Item9">Item9</option>
+                  <option value="Item10">Item10</option>
+                  <option value="Item11">Item11</option>
+                  <option value="Item12">Item12</option>
+                  <option value="Item13">Item13</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Is this an Indigenous identified position?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup4" id="4a" value="yes">
+              <label class="btn btn-outline-primary" for="4a">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup4" id="4b" value="no">
+              <label class="btn btn-outline-primary" for="4b">No</label>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Does this vacancy meet the minimum wage requirements?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup5" id="5a" value="yes">
+              <label class="btn btn-outline-primary" for="5a">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup5" id="5b" value="no">
+              <label class="btn btn-outline-primary" for="5b">No</label>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Do you want to share this vacancy with the employer?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup6" id="6a" value="yes">
+              <label class="btn btn-outline-primary" for="6a">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup6" id="6b" value="no">
+              <label class="btn btn-outline-primary" for="6b">No</label>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Do you want to advertise this vacancy on the JobActive website? </label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup7" id="7a" value="yes">
+              <label class="btn btn-outline-primary" for="7a">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup7" id="7b" value="no">
+              <label class="btn btn-outline-primary" for="7b">No</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+            <button type="button" class="btn btn-primary" onclick="next()">Next</button>
+            <button type="button" class="btn btn-link" onclick="exit()">Exit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-small offset-3">
+    <p class="mb-1"><strong>myES</strong> | Department of Education, Skills and Employment</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script>
+function next() {
+  location.href = '11-PartC.html';
+}
+function prev() {
+  location.href = '09-VacancyDescription.html';
+}
+</script> 
+<script>
+$('[name="collapseGroup1"]').on('change', function(){  
+  if($(this).val()  === "yes"){
+    $('#collapseOne').collapse('show')
+  }else{
+     $('#collapseOne').collapse('hide')
+  }
+});
+</script> 
+<script>
+$('[name="collapseGroup2"]').on('change', function(){  
+  if($(this).val()  === "yes"){
+    $('#collapseTwo').collapse('show')
+  }else{
+     $('#collapseTwo').collapse('hide')
+  }
+});
+</script> 
+<script>
+$('[name="collapseGroup3"]').on('change', function(){  
+  if($(this).val()  === "yes"){
+    $('#collapseThree').collapse('show')
+  }else{
+     $('#collapsethree').collapse('hide')
+  }
+});
+</script> 
+<script>
+	 $(document).ready(function(){
+
+ var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+ removeItemButton: true,
+ maxItemCount:5,
+ searchResultLimit:5,
+ renderChoiceLimit:5
+ });
+
+
+ });
+	</script> 
+<script>
+	 $(document).ready(function(){
+
+ var multipleCancelButton = new Choices('#choices-multiple-remove-button2', {
+ removeItemButton: true,
+ maxItemCount:5,
+ searchResultLimit:5,
+ renderChoiceLimit:5
+ });
+
+
+ });
+	</script> 
+<script>
+	$(document).ready(function () {
+    $('#datepicker').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+	</script> 
+<script>
+	$(document).ready(function () {
+    $('#datepicker2').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+	</script>
+<script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script>
+</body>
+</html>

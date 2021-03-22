@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>myES / Employer Summary</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+         crossorigin="anonymous"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link id="dark-theme-style" rel="stylesheet" />
+<link href="css/custom.css" rel="stylesheet">
+<script>
+         /// some script
+         
+         // jquery ready start
+         $(document).ready(function() {
+         	// jQuery code
+         
+         	//////////////////////// Prevent closing from click inside dropdown
+             $(document).on('click', '.dropdown-menu', function (e) {
+               e.stopPropagation();
+             });
+             
+         	
+         }); // jquery end
+      </script> 
+<script type="text/javascript">
+         /// some script
+         
+         // jquery ready start
+         $(document).ready(function() {
+         	// jQuery code
+         
+         	  $("[data-trigger]").on("click", function(e){
+                 e.preventDefault();
+                 e.stopPropagation();
+                 var offcanvas_id =  $(this).attr('data-trigger');
+                 $(offcanvas_id).toggleClass("show");
+                 $('body').toggleClass("offcanvas-active");
+                 $(".screen-overlay").toggleClass("show");
+         
+             }); 
+         
+         
+            	// Close menu when pressing ESC
+             $(document).on('keydown', function(event) {
+                 if(event.keyCode === 27) {
+                    $(".offcanvas").removeClass("show");
+                    $("body").removeClass("overlay-active");
+                 }
+             });
+         
+             $(".btn-close, .screen-overlay").click(function(e){
+             	$(".screen-overlay").removeClass("show");
+                 $(".offcanvas").removeClass("show");
+                 $("body").removeClass("offcanvas-active");
+         
+         
+             }); 
+         	
+         }); // jquery end
+      </script>
+</head>
+<body>
+<b class="screen-overlay"></b> 
+<!-- offcanvas panel right -->
+<aside class="offcanvas offcanvas-right" id="my_offcanvas2">
+  <header class="p-4 bg-light border-bottom">
+    <button class="btn btn-outline-danger btn-close mt-2"> </button>
+    <h6 class="mb-0">Context menu </h6>
+  </header>
+  <nav class="list-group list-group-flush"> <a href="#" class="list-group-item">Home</a> <a href="#" class="list-group-item">About us</a> <a href="#" class="list-group-item">Menu name 1</a> <a href="#" class="list-group-item">Menu name 2</a> <a href="#" class="list-group-item">Menu name 3</a> </nav>
+</aside>
+<!-- offcanvas panel right .end -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary pe-3 nav-org">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        <span class="pe-1 text-white">BBWY - U645</span>
+      </form>
+    </div>
+    <div class="d-flex"> <span class="me-5 text-white fw-bold">Welcome Ross (RS2344)</span> <a href="UnderConstruction.html" class="me-3">Switch account <i class="bi bi-arrow-repeat"></i></a> <a
+        href="javascript:void()" class="font-weight-bold" id="theme-toggler" onclick="toggleTheme()"
+      ></a></div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary ps-3 pe-3 pt-4 nav-main"> <a class="navbar-brand fw-bold" href="00-1Globaldash.html">myES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> MyMenu </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-megamenu">
+                <h3 class="title">MyMenu</h3>
+                <ul class="list-unstyled">
+                  <li>No menu items added to My Menu. <a href="#">Find out how to add items to My menu</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+      <li class="nav-item dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Job seeker </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Overview</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Job seeker summary</a></li>
+                  <li><a href="#">Comments</a></li>
+                  <li><a href="#">Job seeker calendar</a></li>
+                  <li><a href="#">Notification</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Plans and assessments</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">ESAt / JCA</a></li>
+                  <li><a href="#">Job plan</a></li>
+                  <li><a href="#">JSCI</a></li>
+                  <li><a href="#">Income test</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Compliance</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Search compliance</a></li>
+                  <li><a href="#">Targeted compliance framework</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Employment</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Add job referral</a></li>
+                  <li><a href="#">Job search reporting</a></li>
+                  <li><a href="#">Career profile</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Annual activities</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Annual activity requirements details</a></li>
+                  <li><a href="#">Annual activity requirements calculator</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Servicing</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Phase management</a></li>
+                  <li><a href="#">Referral history</a></li>
+                  <li><a href="#">Transfer job seeker</a></li>
+                  <li><a href="#">Transition plan</a></li>
+                  <li><a href="#">Eligibility summary</a></li>
+                  <li><a href="#">Suspensions and volunteer periods</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-7th">
+              <div class="col-megamenu">
+                <h3 class="title">Incident</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Incident report</a></li>
+                  <li><a href="#">WHS incident</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+      <li class="nav-item dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Provider </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Caseload</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Provider caseload</a></li>
+                  <li><a href="#">Special client search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Employment</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Commitment upload</a></li>
+                  <li><a href="#">Commitment search</a></li>
+                  <li><a href="#">Job seeker history search</a></li>
+                  <li><a href="#">Request history search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Employment fund</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Create transfer</a></li>
+                  <li><a href="#">Maintain qualified staff</a></li>
+                  <li><a href="#">Maintain suppliers</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Contact</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Search for contracts</a></li>
+                  <li><a href="#">Search for outlets</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Search</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Performance dashboard</a></li>
+                  <li><a href="#">Employment region summary</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-2">
+              <div class="col-megamenu">
+                <h3 class="title">Provider calendar</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Calendar</a></li>
+                  <li><a href="#">Search</a></li>
+                  <li><a href="#">Calendar report</a></li>
+                  <li><a href="#">Diary administration</a></li>
+                  <li><a href="#">Event and task management</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+      <li class="nav-item dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Activity </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Activity</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Activity dashboard</a></li>
+                  <li><a href="#">Activity search</a></li>
+                  <li><a href="#">Activity contingency events</a></li>
+                  <li><a href="#">Activity contact list</a></li>
+                  <li><a href="#">Placement</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Host organisation</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Search host organisation</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+      <li class="nav-item active dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Employment </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Employer</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Employment dashboard</a></li>
+                  <li><a href="#">Search employers</a></li>
+                  <li><a href="#">Search vacancies</a></li>
+                  <li><a href="#">Job placement search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Agreements</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Search host organisation</a></li>
+                  <li><a href="#">Available payment search</a></li>
+                  <li><a href="#">Head agreement search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Candidates</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Internship feedback</a></li>
+                  <li><a href="#">Find candidates</a></li>
+                  <li><a href="#">Manage candidates</a></li>
+                  <li><a href="#">Invitations search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+      <li class="nav-item dropdown has-megamenu"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Payment </a>
+        <div class="dropdown-menu megamenu" role="menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Claim payments</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Search payments</a></li>
+                  <li><a href="#">Acquittals</a></li>
+                  <li><a href="#">Payment history</a></li>
+                  <li><a href="#">Override search</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">WFD</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Payment search</a></li>
+                  <li><a href="#">Payment calculator</a></li>
+                  <li><a href="#">Manage candidates</a></li>
+                  <li><a href="#">Group based payments</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 -->
+            <div class="col-md-3">
+              <div class="col-megamenu">
+                <h3 class="title">Agreements</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Payment search</a></li>
+                  <li><a href="#">Outcome tracker</a></li>
+                  <li><a href="#">Assessment and EAF</a></li>
+                </ul>
+              </div>
+              <!-- col-megamenu.// --> 
+            </div>
+            <!-- end col-3 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- dropdown-mega-menu.// --> 
+      </li>
+    </ul>
+  </div>
+  <form class="d-flex">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-search" viewBox="0 0 24 12" width="32" height="32" >
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+    </svg>
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+  <!-- navbar-collapse.// --> 
+</nav>
+<div class="container">
+  <div class="content py-5">
+    <div class="row mb-5">
+      <h2>Employment</h2>
+      <p>You can search, edit and add new employers, vancacies and placements.</p>
+    </div>
+    <div class="row mb-5">
+      <h3 class="mb-3">Things you can do</h3>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Placement</h4>
+            <p class="card-text">Search or create a new employer</p>
+          </div>
+          <div class="w-100 p-3"> <a href="UnderConstruction.html">Search</a> <a href="#" class="float-end">Add placement</a> </div>
+          <div class="card-footer ">
+            <h5 class="card-title"><span class="fw-bold">1</span> new placements</h5>
+            <p class="card-text">Since 24 Jan 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Vacancy</h4>
+            <p class="card-text">Search or create a new employer</p>
+          </div>
+          <div class="w-100 p-3"> <a href="UnderConstruction.html">Search</a> <a href="#" class="float-end">Add vacancy</a> </div>
+          <div class="card-footer ">
+            <h5 class="card-title"><span class="fw-bold">3</span> new vacancies</h5>
+            <p class="card-text">Since 24 Jan 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Employer</h4>
+            <p class="card-text">Search or create a new employer</p>
+          </div>
+          <div class="w-100 p-3"> <a href="UnderConstruction.html">Search</a> <a href="00-Start.html" class="float-end">Add Employer</a> </div>
+          <div class="card-footer ">
+            <h5 class="card-title"><span class="fw-bold">1</span> new employers</h5>
+            <p class="card-text">Since 24 Jan 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-12 col-lg-8 mb-5">
+        <h3 class="mb-3">Job Interviews</h3>
+        <div class="card  card-tasks">
+          <div class="m-3"> <a class="float-end" href="UnderConstruction.html">See all job interviews</a> </div>
+          <div class="card-body ">
+            <div class="table-full-width table-responsive">
+              <table class="table dash">
+                <thead>
+                  <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Job seeker</th>
+                    <th scope="col" class="text-right">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Conducted<br>
+                      <span class="fw-light">28 December 2020</span></th>
+                    <td><span class="fw-bold">Marinko Vanborgmyster</span><br>
+                      Job Seeker ID: 84725682</td>
+                    <td><a href="#">View</a> | <a href="#">Mark attendance</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Did not show<br>
+                      <span class="fw-light">25 December 2020</span></th>
+                    <td><span class="fw-bold">Solma Sloremni</span><br>
+                      Job Seeker ID: 05634535</td>
+                    <td><a href="#">View</a> | <a href="#">Mark attendance</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Conducted<br>
+                      <span class="fw-light">23 December 2020</span></th>
+                    <td><span class="fw-bold">Sylverster festworlmic</span><br>
+                      Job Seeker ID: 2433638</td>
+                    <td><a href="#">View</a> | <a href="#">Mark attendance</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-8 mb-5">
+        <h3 class="mb-3">Vacancies</h3>
+        <div class="card  card-tasks">
+          <div class="m-3"> <a class="float-end" href="UnderConstruction.html">See all vacancies</a> </div>
+          <div class="card-body ">
+            <div class="table-full-width table-responsive">
+              <table class="table dash">
+                <thead>
+                  <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Job seeker</th>
+                    <th scope="col" class="text-right">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Active<br>
+                      <span class="fw-light">28 December 2020</span></th>
+                    <td><span class="fw-bold">House keeping</span><br>
+                      Vacancy ID: 3456728</td>
+                    <td><a href="12-ReferralDetails.html">Add placement</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Active<br>
+                      <span class="fw-light">25 December 2020</span></th>
+                    <td><span class="fw-bold">Heavy Equipment Operator</span><br>
+                      Vacancy ID: 0579567</td>
+                    <td><a href="12-ReferralDetails.html">Add placement</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Active<br>
+                      <span class="fw-light">23 December 2020</span></th>
+                    <td><span class="fw-bold">Receptionist</span><br>
+                      Vacancy ID: 4572467</td>
+                    <td><a href="12-ReferralDetails.html">Add placement</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <h3 class="mb-3">Your previous activity</h3>
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="m-3"> <a class="float-end" href="UnderConstruction.html">See all activities</a> </div>
+          <div class="card-body ">
+            <div class="table-full-width table-responsive">
+              <table class="table dash">
+                <thead>
+                  <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Piece of work</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">In progress<br>
+                      <span class="fw-light">25 December 2020</span></th>
+                    <td><span class="fw-bold">Add vacancy</span><br>
+                      Employer ID: 0579567</td>
+                    <td><a href="08-VacancyDetails.html">Continue</a> | <a href="#">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">In progress<br>
+                      <span class="fw-light">25 December 2020</span></th>
+                    <td><span class="fw-bold">Add employer</span><br>
+                      Employer ID: 8883453</td>
+                    <td><a href="05-Address.html">Continue</a> | <a href="#">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">In progress<br>
+                      <span class="fw-light">25 December 2020</span></th>
+                    <td><span class="fw-bold">Add placement</span><br>
+                      Employer ID: 82456254</td>
+                    <td><a href="12-ReferralDetails.html">Continue</a> | <a href="#">Delete</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  <footer class="my-5 pt-5 text-muted text-small">
+    <p class="mb-1"><strong>myES</strong> | Department of Education, Skills and Employment</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+  </div>
+</div>
+<script>
+         // Dropdown Menu Fade    
+         jQuery(document).ready(function(){
+             $(".dropdown").hover(
+                 function() { $('.dropdown-menu', this).stop().fadeIn("fast");
+                 },
+                 function() { $('.dropdown-menu', this).stop().fadeOut("fast");
+             });
+         });
+      </script> 
+<script>
+function next() {
+  location.replace("01-PartA.html")
+}
+function exit() {
+  location.replace("#")
+}
+</script> 
+<script>
+$('[name="collapseGroup"]').on('change', function(){  
+  if($(this).val()  === "yes"){
+    $('#collapseOne').collapse('show')
+  }else{
+     $('#collapseOne').collapse('hide')
+  }
+});
+</script> 
+<script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script> 
+<script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script>
+</body>
+</html>

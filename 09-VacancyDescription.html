@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Vacancy description</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+         crossorigin="anonymous"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link id="dark-theme-style" rel="stylesheet" />	
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary pe-3 nav-org">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        
+        <span class="pe-1 text-white">BBWY - U645</span>
+      </form>
+    </div>
+    <div class="d-flex"> <span class="me-5 text-white fw-bold">Welcome Ross (RS2344)</span> <a href="#" class="me-3">Switch account <i class="bi bi-arrow-repeat"></i></a> <a
+        href="javascript:void()" class="font-weight-bold" id="theme-toggler" onclick="toggleTheme()"
+      ></a></div>
+  </div>
+</nav>
+<div class="container">
+  <main>
+    <div class="py-5 offset-3">
+      <h2>Vacancy description</h2>
+      <p class="lead">We need to know the vacancy this employer has</p>
+      <hr>
+      <a id="btn-prev" onclick="prev()" href="#"><i class="bi bi-chevron-left"></i>Previous</a> </div>
+    <div class="row">
+      <div class="col-md-3 mt-n2 progress-indicator">
+        <ul class="nav flex-column">
+          <li class="nav-item"> <a class="nav-link fw-bold progress-done" href="#"><i class="bi bi-check-circle-fill progress-indicator-sub-icon"></i>Part A - Employer details</a> </li>
+          <li class="nav-item"> <a class="nav-link fw-bold" href="#">Part B - Vacancy details</a> </li>
+          <li class="nav-item"> <a class="nav-link sub" href="#">Vacancy details</a> </li>
+          <li class="nav-item"> <a class="nav-link ms-3 fw-bold progress-sub-active" href="#"><i class="bi bi-play-circle-fill progress-indicator-sub-icon"></i> Vacancy description</a> </li>
+          <li class="nav-item"> <span class="nav-link sub" href="#">Vacancy information</span> </li>
+          <li class="nav-item"> <span class="nav-link fw-bold" href="#">Part C - Placement details</span> </li>
+          <li class="nav-item"> <span class="nav-link fw-bold" href="#">Review and submit</span> </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-12 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Employer name</h5>
+                  <table class="table table-borderless card-table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">ABN</th>
+                        <td>Something here</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Company name</th>
+                        <td>Something here</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Entity type</th>
+                        <td>Something here</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Main business location</th>
+                        <td>Something here</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5">
+            <label for="title" class="form-label">Vacancy title</label>
+            <input type="text" class="form-control" id="title" placeholder="">
+          </div>
+          <div class="col-12 mb-5">
+            <label for="exampleFormControlTextarea1" class="form-label">Vacancy description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-md-6 mb-5">
+            <label for="site" class="form-label">Vacancy type</label>
+            <select class="form-select" id="site" required>
+              <option value="">Choose...</option>
+              <option>Apprenticeship</option>
+              <option>Commission</option>
+              <option>Pre-existing employment</option>
+				<option>Intenship</option>
+				<option>Normal position</option>
+				<option>Graduate</option>
+				<option>Seasonal</option>
+				<option>Traineeship</option>
+				<option>Self employment</option>
+            </select>
+          </div>
+          <div class="col-12 mb-5">
+            <label for="org" class="form-label">Position limit for vacancy</label>
+            <div class="col-1">
+              <input type="text" class="form-control" id="org">
+            </div>
+          </div>
+          <div class="col-6 mb-5">
+            <label for="occ" class="form-label">Select the occupation category</label>
+            <select class="form-select" id="occ" required>
+              <option value="">Choose...</option>
+              <option disabled>Accounting</option>
+              <option disabled>Administration &amp; office support</option>
+              <option disabled>Agriculture, animals &amp; conservation</option>
+				<option disabled>Architecture &amp; design</option>
+				<option disabled>Banking &amp; financial services</option>
+				<option disabled>Communications, advertising, arts &amp; media</option>
+				<option disabled>Community services</option>
+				<option disabled>Construction</option>
+				<option disabled>Customer service &amp; call centres</option>
+				<option disabled>Education &amp; training</option>
+				<option disabled>Engineering</option>
+				<option disabled>Executive &amp; general management</option>
+				<option disabled>Defence &amp; protective services</option>
+				<option disabled>Hospitality &amp; tourism</option>
+				<option disabled>Human resource &amp; recruitment</option>
+				<option>Information &amp; Communication Technology (ICT)</option>
+				<option disabled>Insurance &amp; superannuation</option>
+				<option disabled>Legal</option>
+				<option disabled>Manufacturing</option>
+				<option disabled>Health &amp; medical</option>
+				<option>Load more options...</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-5">
+            <label for="spec" class="form-label">Select the specific occupation that best relates</label>
+            <select class="form-select" id="spec" required>
+              <option value="">Choose...</option>
+              <option>ICT managers</option>
+              <option>ICT trainers</option>
+              <option>ICT sales professionals</option>
+				<option>ICT business and systems analysts</option>
+				<option>Multimedia specialists and web developers</option>
+				<option>Software and applications programmers</option>
+				<option>Database &amp; systems administrators &amp; ICT security</option>
+				<option>Computer network professionals</option>
+				<option>ICT support and test engineers</option>
+				<option>ICT support technicians</option>
+				<option>Telecommunications technical specialists</option>
+				<option>ICT sales assistants</option>
+            </select>
+          </div>
+          <div class="col-12 mb-5">
+            <label class="form-label">Did the job seeker find their own employment?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="collapseGroup" id="btnradio1" value="yes">
+              <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+              <input type="radio" class="btn-check" name="collapseGroup" id="btnradio2" value="no">
+              <label class="btn btn-outline-primary" for="btnradio2">No</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+            <button type="button" class="btn btn-primary" onclick="next()">Next</button>
+            <button type="button" class="btn btn-link" onclick="exit()">Exit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-small offset-3">
+    <p class="mb-1"><strong>myES</strong> | Department of Education, Skills and Employment</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script>
+function next() {
+  location.href = '10-VacancyInformation.html';
+}
+function prev() {
+  location.href = '08-VacancyDetails.html';
+}
+</script>
+<script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script>
+</body>
+</html>

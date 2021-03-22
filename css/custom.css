@@ -1,0 +1,370 @@
+/* ------------------------- Navbar ------------------------------*/
+.nav-main {
+  padding-bottom: 0px !important;
+}
+.navbar .has-megamenu {
+  position: static !important;
+}
+.navbar .megamenu {
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px;
+}
+.navbar .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+.bg-light {
+  background-color: #E9EBFB !important;
+}
+.bg-dark {
+  background-color: #0E0048 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #0E0048 !important;
+  padding-left: 0px;
+}
+/* ------------------------- nunito-sans-regular - latin ------------------------------*/
+/* roboto-regular - latin */
+/* nunito-sans-regular - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-sans-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''), url('../fonts/nunito-sans-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/nunito-sans-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/nunito-sans-v6-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/nunito-sans-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/nunito-sans-v6-latin-regular.svg#NunitoSans') format('svg'); /* Legacy iOS */
+}
+/*------------------------- Autocomplete --------------------------*/
+mark {
+  background-color: pink;
+}
+.list-autocomplete {
+  padding: 1em;
+}
+.list-autocomplete em {
+  font-style: normal;
+  background-color: #e1f2f9;
+}
+.hasNoResults {
+  color: #aaa;
+}
+.hasNoResults, .btn-extra {
+  display: block;
+  padding: 10px;
+}
+.hasNoResults {
+  color: #aaa;
+}
+.btn-extra {
+  width: 100%;
+  border-top: .5px solid #d2d2d2;
+}
+.bg-primary {
+  background-color: #0E0048 !important;
+}
+div.dropdown a {
+  padding: 1em;
+}
+div.dropdown i {
+  padding: 1em;
+}
+/*------------------------- Megamenu --------------------------*/
+.megamenu {
+  background-color: #e6e6e6;
+  color: #0E0048;
+  border: 1px solid #e6e6e6;
+}
+.megamenu a {
+  color: #0E0048;
+  text-decoration: none;
+}
+.megamenu a:hover {
+  text-decoration: underline;
+}
+.megamenu a:hover {
+  text-decoration: underline;
+}
+.megamenu h3 {
+  color: #606FE0;
+}
+nav.nav-main ul.navbar-nav > li.nav-item.active > a.nav-link:hover {
+  border-bottom-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+nav.nav-main ul.navbar-nav > li.nav-item > a.nav-link {
+  text-align: center !important;
+  border-bottom: 5px solid #0E0048;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+nav.nav-main ul.navbar-nav > li.nav-item > a.nav-link:hover {
+  border-bottom-color: #e6e6e6;
+}
+nav.nav-main ul.navbar-nav > li.active > a.nav-link {
+  border-bottom-color: #e6e6e6;
+  background-color: #e6e6e6;
+  color: #232323;
+  border-radius: 4px 4px 0 0;
+}
+.nav-org a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-org a:hover {
+  text-decoration: underline;
+}
+.nav-main {
+  border-bottom: 5px solid #e6e6e6;
+}
+/*------------------------- Card --------------------------*/
+div.card.card-todo {
+  border: 2px solid #cccccc;
+  border-style: dashed;
+}
+div.card.card-inprogress {
+  border: 2px solid #4653D6;
+}
+div.card.card-done {
+  border: 2px solid #00C698;
+}
+.card-icon-inprogress {
+  font-size: 2rem;
+  padding: 5px 20px 5px 5px;
+  color: #4653D6;
+}
+.card-icon-todo {
+  font-size: 2rem;
+  padding: 5px 20px 5px 5px;
+  color: #cccccc;
+}
+.card-icon-done {
+  font-size: 2rem;
+  padding: 5px 20px 5px 5px;
+  color: #00C698;
+}
+i.inner {
+  font-size: 2rem;
+  color: #000;
+}
+
+.card-done:hover {
+background-color: #e3f1ed;	
+	cursor: pointer;
+}
+
+.card-global:hover {
+		cursor: pointer;
+	background-color: #F1F1F1;
+}
+/*------------------------- Card reference ------------------------------*/
+table.card-table th {
+  width: 50%;
+}
+/*------------------------- Progress indicator --------------------------*/
+.progress-sub-active {
+  background-color: #E9EAF5;
+  border-radius: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.progress-indicator-sub-icon {
+  margin-left: -6px;
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+div.progress-indicator li.nav-item span.sub, div.progress-indicator li.nav-item a.sub {
+  margin-left: 32px !important;
+}
+.progress-done {
+  color: #00C698;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  position: relative;
+  left: -20px;
+}
+.progress-done i {
+  color: #00C698;
+  font-size: 1.4em;
+  margin-right: 5px;
+}
+/*------------------------- Bootstrap style overrides --------------------------*/
+.btn {
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn:hover {
+  box-shadow: 2px 8px 16px rgba(127, 137, 229, 0.2);
+}
+.btn.btn-primary {
+  background-color: #4653D6;
+}
+label {
+  font-weight: bold;
+}
+label.form-check-label {
+  font-weight: normal;
+}
+body {
+  font-family: "Nunito Sans";
+}
+a {
+  color: #4653D6;
+}
+.btn-outline-primary {
+  border-color: #4653D6;
+  color: #4653D6;
+}
+.btn-outline-primary:active, .btn-check:checked + .btn-outline-primary, .btn-outline-primary:hover, .btn-check:checked + .btn-outline-primary:hover {
+  background-color: #4653D6;
+  color: #ffffff;
+}
+/*------------------------- Negative spacing from bootstrap extra SASS --------------------------*/
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
+.mt-n2 {
+  margin-top: -0.5rem !important;
+}
+.mt-n3 {
+  margin-top: -0.75rem !important;
+}
+.mt-n4 {
+  margin-top: -1.00rem !important;
+}
+.mt-n5 {
+  margin-top: -1.25rem !important;
+}
+/* -------------------------------  Styles date picker placeholder ---------------------------------- */
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+/*------------------------- Alert with icon -------------------------*/
+.alert {
+  position: relative;
+  padding: 0;
+  min-width: 250px;
+}
+.alert-info {
+  position: relative;
+  padding: 0;
+  min-width: 250px;
+  border-color: #E9EBFB;
+  border-left: 6px solid #4653D6;
+  background-color: #E9EBFB;
+}
+.alert-warning {
+  position: relative;
+  padding: 0;
+  min-width: 250px;
+  border-color: #FFF3E5;
+  border-left: 6px solid #FF8800;
+  background-color: #FFF3E5;
+}
+.alert-icon, .alert-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.alert-icon {
+  min-width: 40px;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.alert-text {
+  padding: 1rem;
+  width: 100%;
+}
+.alert-text > h5 {
+  font-weight: 600;
+}
+.info {
+  color: #4653D6;
+}
+.warning {
+  color: #FF8800;
+}
+.warning-dark {
+  color: #A85A00;
+}
+/*------------------------- Context slider --------------------------*/
+.offcanvas-active {
+  overflow: hidden;
+}
+.screen-overlay {
+  width: 0%;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+.screen-overlay.show {
+  transition: opacity .5s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+.offcanvas {
+  width: 350px;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all .2s;
+  border-radius: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1200;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.offcanvas.offcanvas-right {
+  right: 0;
+  left: auto;
+  transform: translateX(100%);
+}
+.offcanvas.show {
+  visibility: visible;
+  transform: translateX(0);
+  transition: transform .2s;
+}
+.offcanvas .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+/*------- testing ---------*/
+table.dash tr td:nth-child(3), table.dash tr th:nth-child(3) {
+  text-align: right;
+}
+.col-md-7th {
+  width: 14.28%;
+}

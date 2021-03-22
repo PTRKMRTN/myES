@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Employer details submitted</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+         crossorigin="anonymous"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link id="dark-theme-style" rel="stylesheet" />	
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary pe-3 nav-org">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        
+        <span class="pe-1 text-white">BBWY - U645</span>
+      </form>
+    </div>
+    <div class="d-flex"> <span class="me-5 text-white fw-bold">Welcome Ross (RS2344)</span> <a href="#" class="me-3">Switch account <i class="bi bi-arrow-repeat"></i></a> <a
+        href="javascript:void()" class="font-weight-bold" id="theme-toggler" onclick="toggleTheme()"
+      ></a></div>
+  </div>
+</nav>
+<div class="container">
+  <main>
+    <div class="col-lg-6 col-md-8 mx-auto py-5">
+		 <h2 class="mb-3 text-success fw-bold fs-1"><i class="bi bi-check-circle-fill"></i> Success!</h2>
+      <h2 class="fw-light mb-5">The employer details have <span class="text-success fw-bold">submitted.</span></h2>
+      <h3 class="fw-light">What’s next</h3>
+      <p class="lead text-muted mb-5">Once you have found a job seeker’s placement you will need to come back and complete this activity. </p>
+
+<div class="alert alert-info mb-5">
+  <div class="alert-icon">
+    <i class="bi bi-info-circle-fill info"></i>
+  </div>
+  <div class="alert-text info">
+    <h5>Adding a job placement</h5> 
+    <p>You can use this activity to edit your referrals and add a job seeker placement.</p>
+   </div>
+</div>
+		
+<!--<div class="alert alert-warning mb-5">
+  <div class="alert-icon">
+    <i class="bi bi-exclamation-triangle-fill warning"></i>
+  </div>
+  <div class="alert-text warning-dark">
+    <h5>You should know</h5> 
+    <p>This is something you need to know.</p>
+   </div>
+</div>-->
+		
+		
+      <button type="button" class="btn btn-primary" onclick="next()">Back to employer summary page</button>
+    </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-small offset-3">
+    <p class="mb-1"><strong>myES</strong> | Department of Education, Skills and Employment</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script>
+function next() {
+  location.href = '00-Index.html';
+}
+</script>
+<script>
+	// you can use app's unique identifier here
+const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+
+const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+
+// you can change this url as needed
+const DARK_THEME_PATH = "css/bootstrap-night.min.css";
+
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+
+// check if user has already selected dark theme earlier
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+
+/**
+ * Apart from toggling themes, this will also store user's theme preference in local storage.
+ * So when user visits next time, we can load the same theme.
+ *
+ */
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-sun-fill'></i>";
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "Switch theme <i class='bi bi-moon-stars-fill'></i>";
+}
+</script>
+</body>
+</html>
