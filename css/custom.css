@@ -160,6 +160,15 @@ background-color: #e3f1ed;
 		cursor: pointer;
 	background-color: #F1F1F1;
 }
+
+div.card-body h5.card-title {
+	font-weight: bold;
+	
+}
+
+.card {
+    box-shadow: #e6e6e6 0px 10px 20px;
+}
 /*------------------------- Card reference ------------------------------*/
 table.card-table th {
   width: 50%;
@@ -367,4 +376,8 @@ table.dash tr td:nth-child(3), table.dash tr th:nth-child(3) {
 }
 .col-md-7th {
   width: 14.28%;
+}
+
+div.dropdown-menu.dashboard {
+	right: 0px;
 }
